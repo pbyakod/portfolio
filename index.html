@@ -11,58 +11,58 @@
     <title>Pranav's Portfolio</title>
 </head>
 <body>
+    <main>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
-                <a class="nav-link" href="#"><i class="fa fa-id-card"></i> About</a>
-                <a class="nav-link" href="#"><i class="fas fa-folder-open"></i> Portfolio</a>
-                <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-address-book"></i> Contact</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Social Media</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"></i> Email</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-phone-alt"></i> Phone</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa fa-github"></i> Github</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
-                    </ul>
-                </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"><i class="fas fa-id-card"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio"><i class="fas fa-folder-open"></i> Portfolio</a>
+              </li>
+            </ul>
+            <li class="d-flex nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-address-book"></i> Contact</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/pranavbyakod/"><i class="fab fa-instagram-square"></i> Social</a></li>
+                  <li><a class="dropdown-item" href="mailto: pranavbyakod@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/pbyakod"><i class="fab fa-github"></i> Github</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/pranavbyakod/"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                </ul>
+              </li>
+              <li class="d-flex nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-file-contract"></i> Resume</a>
-            </div>
+              </li>
           </div>
         </div>
-    </nav>
+      </nav>
     <!-- animated header -->
-    <div class="context">
-        <h1>Pranav Byakod</h1>
+    <div class="header-custom" id="home">
+        <img src="media/header.gif" class="img-fluid" alt="animated header">
     </div>
-    <div class="area" >
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <!-- about header -->
+    <div class="card w-100 card-custom" id="about">
+        <div class="card-header">
+            <h1>About Me</h1>
+        </div>
     </div>
     <!-- about section -->
     <div class="about">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="media/profile.jpg" alt="profile image" style="max-height: 360px;">
+                <div class="card h-100">
+                    <img src="media/profile.jpg" alt="profile image">
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card">
-                    <h5 class="card-header">About Me</h5>
+                <div class="card h-100">
+                    <h5 class="card-header">Description</h5>
                     <div class="card-body">
                         <p class="card-text">Hey everyone! My name is Pranav Byakod. I'm currently a junior at Santa Clara University, pursuing a degree in Computer Science and Mathematics.</p>
                         <p>Currently, I'm adept at programming in C++, Python, and Javascript. Since enrolling in UC Berkeley's full stack coding bootcamp, I've been learning and practicing web-based coding programs such as git, command line, html, and css. Apart from developing code, I enjoy playing football, swimming, music, travelling, and cooking.</p>
@@ -73,23 +73,29 @@
             </div>
         </div>
     </div>
+    <!-- portfolio header -->
+    <div class="card w-100 card-custom" id="portfolio">
+        <div class="card-header">
+            <h1>Portfolio</h1>
+        </div>
+    </div>
     <!-- portfolio section -->
     <!-- top row -->
     <div class="top-row">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card">
+                <div class="card h-100">
                     <h5 class="card-header">Stocking: The One-Stop Stock Destination</h5>
-                    <img src="media/stocking.png" class="card-img-top" alt="...">
+                    <img src="media/stocking.png" class="card-img-top" alt="stocking">
                     <div class="card-body">
                         <p class="card-text">This multi-functional website provides users with quick and up-to-date stock information, as well as the latest news around the world. Users who wish to view the stock trend of a particular company can do so at the click of a button, while also catching up on financial updates happening across the economy.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card h-100">
                     <h5 class="card-header">Clove: Community Local Organic Vegetable Exchange</h5>
-                    <img src="media/clove.png" class="card-img-top" alt="...">
+                    <img src="media/clove.png" class="card-img-top" alt="clove">
                     <div class="card-body">
                         <p class="card-text">CLOVE is a community engagement application for backyard gardeners and lovers of fresh local produce. Producers can list their harvests for others to see, and consumers can use the interface to search for local produce. Additionally, you’ll find links to resources that can put you in touch with local charities that accept food donations.</p>
                     </div>
@@ -101,27 +107,27 @@
     <div class="bottom-row">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card" style="height: 375px;">
+                <div class="card h-100">
                     <h5 class="card-header">Password Generator</h5>
-                    <img src="media/password.png" class="card-img-top" alt="...">
+                    <img src="media/password.png" class="card-img-top" alt="password">
                     <div class="card-body">
                         <p class="card-text">A webpage designed to generate random passwords, incase you can't think of one. It creats a string of characters based on various specifications that the user inputs themself, making it unique to every individual.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="height: 375px;">
+                <div class="card h-100">
                     <h5 class="card-header">Day Planner</h5>
-                    <img src="media/dayplan.png" class="card-img-top" alt="...">
+                    <img src="media/dayplan.png" class="card-img-top" alt="dayplan">
                     <div class="card-body">
                         <p class="card-text">An interactive scheduler that helps clients maintain their regular working-day tasks. Fun for planning out your long and tedious work days!</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="height: 375px;">
+                <div class="card h-100">
                     <h5 class="card-header">Weather Dashboard</h5>
-                    <img src="media/weather.png" class="card-img-top" alt="...">
+                    <img src="media/weather.png" class="card-img-top" alt="weather">
                     <div class="card-body">
                         <p class="card-text">A webpage that allows users to search the 5-day weather forecast for any city around the world!</p>
                     </div>
@@ -129,6 +135,7 @@
             </div>
         </div>
     </div>
+    </main>
 </body>
 <!-- js links -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
