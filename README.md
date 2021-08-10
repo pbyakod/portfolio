@@ -8,9 +8,11 @@ This portfolio displays some of the biggest projects i've worked on and collabor
 
 ## Portfolio Preview
 
+![Walkthrough Gif](media/walkthrough.gif)
 
 ## Deployed Link
 
+https://pbyakod.github.io/portfolio/
 
 ## Features 
 
